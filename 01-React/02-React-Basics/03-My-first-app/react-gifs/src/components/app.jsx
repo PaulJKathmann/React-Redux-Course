@@ -1,12 +1,15 @@
-import React, { Component} from 'react';
+import React, { Component } from 'react';
+import Gif from './gif';
 import SearchBar from './searchbar';
 
 class App extends Component {
+
     render () {
-        return(
+        return (
             <div className="container">
                 <div className="left-scene">
                     <SearchBar />
+                    <Gif />
                 </div>
                 <div className="right-scene">
                 </div>
