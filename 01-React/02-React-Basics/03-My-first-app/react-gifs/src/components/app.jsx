@@ -4,6 +4,19 @@ import GifList from './giflist';
 import SearchBar from './searchbar';
 
 class App extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            gifs: [],
+            selectedGifId: "H8oJsiC2isDdEPZhtJ",
+        }
+    }
+
+    search = (query) => {
+        // API Call to Giphy API
+        
+    }
     render () {
         const gifs = [ 
             { id: "jUwpNzg9IcyrK" },
@@ -15,7 +28,7 @@ class App extends Component {
                 <div className="left-scene">
                     <SearchBar />
                     <div className="selected-gif">
-                        <Gif id="WDwVikYThYLm8HywbP" />
+                        <Gif id={this.state.selectedGifId} />
                     </div>
                 </div>
                 <div className="right-scene">

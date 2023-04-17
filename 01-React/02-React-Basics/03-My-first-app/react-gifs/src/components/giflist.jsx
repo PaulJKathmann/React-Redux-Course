@@ -11,9 +11,11 @@ class GifList extends Component {
     }
     
     render () {
+      return (
         <div className="gif-list">
             {this.renderList()}
         </div>
+      );
     }
 }
 
