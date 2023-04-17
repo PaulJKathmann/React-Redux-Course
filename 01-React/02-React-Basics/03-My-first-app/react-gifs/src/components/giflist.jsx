@@ -6,6 +6,7 @@ class GifList extends Component {
 
     renderList = () => {
       return this.props.gifs.map(gif => {
+        console.log(gif);
         return <Gif id={gif.id} key={gif.id} />
       });
     }
